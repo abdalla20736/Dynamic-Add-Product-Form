@@ -273,7 +273,7 @@ function ValidateProductInput(input, index) {
   switch (index) {
     //Product Name
     case 0: {
-      var regex = /^[A-Za-z ]{3,}$/;
+      var regex = /^[A-Z][A-Za-z ]{3,}$/;
       var msg = `Required 4 chars at least first char is Uppercase`;
       ValidateRegex(input, regex, msg)
         ? (validProductName = true)
